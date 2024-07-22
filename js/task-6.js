@@ -13,6 +13,8 @@ const divEl = document.querySelector('#boxes');
 
 function createBoxes(amount){
   divEl.innerHTML = '';
+
+  const fragment = document.createDocumentFragment();
   let size = 30;
 
   for(let i = 0; i < amount; i++) {
@@ -23,6 +25,8 @@ function createBoxes(amount){
     divEl.append(box);
     size += 10;
   };
+
+  divEl.append(fragment);
 };
 
 const onBtnCreateClick = event => {
