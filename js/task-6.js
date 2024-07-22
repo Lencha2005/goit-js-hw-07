@@ -35,8 +35,13 @@ const onBtnCreateClick = event => {
 };
 
 btnCreate.addEventListener('click', onBtnCreateClick);
-
-const destroyBoxes = event => {
+ 
+function destroyBoxes () {
   divEl.innerHTML = '';
-}
-btnDestroy.addEventListener('click', destroyBoxes);
+};
+
+const onBtnDestroyClick = event => {
+  destroyBoxes ();
+};
+
+btnDestroy.addEventListener('click', onBtnDestroyClick);
