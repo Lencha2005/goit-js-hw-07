@@ -22,11 +22,10 @@ function createBoxes(amount){
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
-    divEl.append(box);
+    fragment.append(box);
     size += 10;
   };
 
-  divEl.append(fragment);
 };
 
 const onBtnCreateClick = event => {
