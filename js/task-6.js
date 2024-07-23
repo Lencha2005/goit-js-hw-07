@@ -26,6 +26,7 @@ function createBoxes(amount){
     size += 10;
   };
 
+  divEl.append(fragment);
 };
 
 const onBtnCreateClick = event => {

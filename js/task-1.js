@@ -7,6 +7,4 @@ items.forEach(el => {
 
     console.log(`Category: ${title}`);
     console.log(`Elements: ${categoryItem.length}`);
-})
-
-
+});
